@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.movie_fragment)
 
-        var youTubePlayerView: YouTubePlayerView = findViewById(R.id.youtube_player_view);
-        getLifecycle().addObserver(youTubePlayerView);
+        var youTubePlayerView: YouTubePlayerView = findViewById(R.id.youtube_player_view)
+        lifecycle.addObserver(youTubePlayerView)
     }
 }
