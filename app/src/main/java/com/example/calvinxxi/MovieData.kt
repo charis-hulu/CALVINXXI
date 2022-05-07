@@ -1,12 +1,14 @@
 package com.example.calvinxxi
 
-class MovieData(
+data class MovieData(
+    var id: String,
     var title: String,
     var genre: String,
     var duration: Int,
-    var age_rating: String,
     var url_trailer: String,
     var synopsis: String,
     var director: String,
-    var cast: String
+    var cast: String,
+    var status: Int,
+    var image_url: String
 )
