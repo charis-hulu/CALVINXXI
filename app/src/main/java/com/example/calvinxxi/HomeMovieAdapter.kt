@@ -35,7 +35,7 @@ class HomeMovieAdapter(val c: MainActivity): RecyclerView.Adapter<HomeMovieAdapt
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        glideImageLoader = GlideImageLoader(c)
+//        glideImageLoader = GlideImageLoader(c)
         Log.d("Main Activity", movieList.toString())
         holder.movieTitle.text = movieList[position].title
         holder.movieGenre.text = movieList[position].genre

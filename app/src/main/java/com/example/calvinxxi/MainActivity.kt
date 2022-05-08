@@ -3,7 +3,6 @@ package com.example.calvinxxi
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import retrofit2.Call
 import retrofit2.Callback
@@ -23,14 +22,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.home_fragment)
+        setContentView(R.layout.movie_fragment)
         this.getMovieResponse()
 
-        listRV = findViewById(R.id.movie_rv)
-
-        listRV.layoutManager = LinearLayoutManager(this)
-
-        listRV.adapter = HomeMovieAdapter(this)
+//        listRV = findViewById(R.id.movie_rv)
+//
+//        listRV.layoutManager = LinearLayoutManager(this)
+//
+//        listRV.adapter = HomeMovieAdapter(this)
 
 
 //        var youTubePlayerView: YouTubePlayerView = findViewById(R.id.youtube_player_view)

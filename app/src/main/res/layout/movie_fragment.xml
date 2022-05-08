@@ -54,34 +54,44 @@
             android:layout_height="wrap_content"
             android:text="122 mins" />
 
-        <TextView
-            android:id="@+id/separtorTV2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="|" />
+<!--        <TextView-->
+<!--            android:id="@+id/separtorTV2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="|" />-->
 
-        <TextView
-            android:id="@+id/ratingTV"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SU" />
+<!--        <TextView-->
+<!--            android:id="@+id/ratingTV"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="SU" />-->
 
     </LinearLayout>
 
-    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-        android:id="@+id/youtube_player_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+<!--    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView-->
+<!--        android:id="@+id/youtube_player_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
 
-        app:autoPlay="false"
+<!--        app:autoPlay="false"-->
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.244"
-        app:videoId="47r8FXYZWNU" />
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.244"-->
+<!--        app:videoId="47r8FXYZWNU" />-->
+        <ImageView
+            android:id="@+id/imageTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.244"/>
 
             <Button
             android:id="@+id/buyTicketBTN"
