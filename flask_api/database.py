@@ -1,3 +1,4 @@
+from select import select
 import mysql.connector
 
 class DB:
@@ -26,5 +27,16 @@ class DB:
 		WHERE movie_id = %s
 		"""
 		self.cursor.execute(select_statement, (id, ))
+		movie_details = self.cursor.fetchall()
+		return movie_details
+
+	def get_ticket_bookings(self, movie_id):
+		select_statement = """
+		SELECT `movie`.`title`, `movie`.`duration`, `movie`.`image`, `theatres`.`theatre_name`, `bookings`.`schedule`, `bookings`.`is_available` FROM `movie` 
+		INNER JOIN `bookings` ON `bookings`.`movie_id` = `movie`.`movie_id`
+		INNER JOIN `theatres`ON `theatres`.`theatre_id`= `bookings`.`theatre_id`
+		WHERE `movie`.`movie_id` = %s;
+		"""
+		self.cursor.execute(select_statement, (movie_id, ))
 		movie_details = self.cursor.fetchall()
 		return movie_details
